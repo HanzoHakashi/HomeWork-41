@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.ConnectException;
@@ -20,11 +21,15 @@ public class EchoClient {
         return new EchoClient(localhost,port);
     }
 
-    public void run(){
+
+    public void run() throws IOException{
         System.out.printf("Напишите 'bye' для выхода%n%n%n");
 
         try(Socket socket = new Socket(host, port)) {
             Scanner scanner = new Scanner(System.in, "UTF-8");
+            var input = socket.getInputStream();
+            var isr = new InputStreamReader(input,"UTF-8");
+            var scanner2 = new Scanner(isr);
             OutputStream output = socket.getOutputStream();
             PrintWriter writer = new PrintWriter(output);
 
@@ -34,6 +39,8 @@ public class EchoClient {
                     writer.write(message);
                     writer.write(System.lineSeparator());
                     writer.flush();
+                    var message2 = scanner2.nextLine().strip();
+                    System.out.printf("%s",message2);
 
                     if ("bye".equalsIgnoreCase(message)){
                         return;
@@ -49,6 +56,8 @@ public class EchoClient {
         }
 
     }
+
+
 
 
 }
