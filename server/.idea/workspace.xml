@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d58c906-a2b4-4d01-b108-ddb2df7ee369" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/EchoClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +36,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Java february/server",
-    "settings.editor.selected.configurable": "preferences.updates"
+    "last_opened_file_path": "D:/client",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EchoServer">
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EchoServer" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Server" />
@@ -51,6 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EchoServer" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
